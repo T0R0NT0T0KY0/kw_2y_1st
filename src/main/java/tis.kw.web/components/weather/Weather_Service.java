@@ -7,7 +7,7 @@ public class Weather_Service {
 	public static Object[] getWeatherByCityNameController(String name) {
 		Object[] goList = new Object[2];
 		try {
-			getWeatherByCityName(name);
+			goList[1] = getWeatherByCityName(name);
 		} catch (Exception e) {
 			goList[0] = e.getMessage();
 		}

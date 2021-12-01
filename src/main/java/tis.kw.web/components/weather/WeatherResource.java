@@ -14,6 +14,7 @@ public class WeatherResource {
 		Map<String, String> q = new HashMap<>();
 		q.put("q", city);
 		q.put("appid", WEATHER_TOKEN);
-		return HttpClient.get("http://api.openweathermap.org/data/2.5/weather", new HashMap<>(), q);
+		q.put("units", "metric");
+		return HttpClient.get("http://api.openweathermap.org/data/2.5/weather", q);
 	}
 }

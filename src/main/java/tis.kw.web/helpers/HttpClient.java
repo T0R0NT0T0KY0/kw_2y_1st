@@ -11,9 +11,8 @@ import java.net.URISyntaxException;
 import java.util.Map;
 
 public class HttpClient {
-	public static String get(String uri, Map<String, String> headers, Map<String, String> query) throws IOException {
+	public static String get(String uri, Map<String, String> query) throws IOException {
 		final Request request = Request.Get(addQuery(query, uri));
-		headers.forEach(request::setHeader);
 		return request.execute()
 				.returnContent().asString();
 	}

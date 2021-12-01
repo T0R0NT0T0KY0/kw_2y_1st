@@ -17,6 +17,8 @@ public class WeatherRoutes extends HttpServlet {
 		String city = req.getParameter("city");
 		PrintWriter writer = resp.getWriter();
 		Object[] information = getWeatherByCityNameController(city);
+		System.out.println(information[0]);
+		System.out.println(information[1]);
 		if (Objects.nonNull(information[0])) {
 			writer.write((String) information[0]);
 			resp.setStatus(400);
