@@ -1,0 +1,56 @@
+.box {
+    position: absolute;
+    background: #C4C4C4;
+    width: 350px;
+    height: 500px;
+    top: 50px;
+}
+
+.block {
+    position: relative;
+    width: 350px;
+    height: 100%;
+}
+
+#block1 {
+    left: 40%;
+}
+
+#weather_box {
+    /*background-image: url("");*/
+    /*left: 250px;*/
+}
+
+
+
+.img_box {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.button {
+    font-family: Roboto;
+    cursor: pointer;
+    border: none;
+    horiz-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 50px;
+    position: absolute;
+    border-radius: 5px;
+    top: 650px;
+    display: inline-block;
+    width: 80%;
+    left: 10%;
+}
+
+#weather_button {
+    background: #00E0FF;
+}
