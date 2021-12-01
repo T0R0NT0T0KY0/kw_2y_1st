@@ -1,18 +1,18 @@
 # kw_2y_1st
-###need
+### need
 ```text
 jdk
 Tomcat 8
 browser or postman
 env
 ```
-###env
+### env
 ```text
 WEATHER_TOKEN=[api.openweathermap.org]
 ```
 
-###for installing dependencies:
-####JS:
+### for installing dependencies:
+#### JS:
 ```shell
 npm install
 ```
@@ -20,7 +20,7 @@ or
 ```shell
 npm i
 ```
-####JAVA
+#### JAVA
 ```shell
 load maven changes... 
 ```
